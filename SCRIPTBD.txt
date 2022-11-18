@@ -1,0 +1,76 @@
+CREATE DATABASE saunibd;
+
+DROP DATABASE saunibd;
+
+USE saunibd;
+
+SHOW TABLES;
+
+SELECT * FROM funcionario;
+SELECT * FROM paciente;
+SELECT * FROM doenca;
+SELECT * FROM consulta;
+SELECT * FROM sintoma;
+SELECT * FROM sintomas_doenca;
+
+CREATE TABLE paciente(
+	idpaciente INT PRIMARY KEY auto_increment,
+	usuario VARCHAR(75) NOT NULL,
+    senha VARCHAR(20) NOT NULL,
+    nome VARCHAR(75) NOT NULL,
+    cpf VARCHAR(15) NOT NULL UNIQUE,
+    sexo Varchar(15) NOT NULL,
+    telefone VARCHAR(22),
+    email VARCHAR(50) NOT NULL UNIQUE
+);
+
+CREATE TABLE doenca(
+	iddoenca INT PRIMARY KEY auto_increment,
+    nomedoenca VARCHAR(40)
+);
+
+
+CREATE TABLE funcionario(
+	idfuncionario INT PRIMARY KEY auto_increment,
+    nome VARCHAR(75) NOT NULL,
+    usuario VARCHAR(75) NOT NULL,
+    senha VARCHAR(20) NOT NULL,
+    cpf VARCHAR(15) NOT NULL UNIQUE,
+    sexo Varchar(15) NOT NULL,
+    telefone VARCHAR (22),
+    email VARCHAR(50) NOT NULL UNIQUE,
+    cargo VARCHAR(75) NOT NULL
+);
+
+
+CREATE TABLE sintoma(
+	idsintoma INT PRIMARY KEY auto_increment,
+    nomesintoma VARCHAR(30)
+);
+
+CREATE TABLE sintomas_doenca(
+	idsintomas_doenca INT PRIMARY KEY auto_increment,
+	id_doenca INT,
+    id_sintoma INT,
+    
+    FOREIGN KEY (id_doenca)
+    REFERENCES doenca(iddoenca),
+    FOREIGN KEY (id_sintoma)
+    REFERENCES sintoma(idsintoma)
+);
+
+CREATE TABLE consulta(
+	idagendamento INT PRIMARY KEY auto_increment,
+    data_consulta VARCHAR(20),
+	id_paciente INT,
+    id_funcionario INT,
+    
+    FOREIGN KEY (id_paciente)
+    REFERENCES paciente(idpaciente),
+    FOREIGN KEY (id_funcionario)
+    REFERENCES funcionario(idfuncionario)
+);
+
+
+
+INSERT INTO `saunibd`.`funcionario` (`nome`, `usuario`, `senha`, `cpf`, `sexo`, `telefone`, `email`, `cargo`) VALUES ('GpSaUni', 'Sauni', 'Nota10', '11111111111', 'Masculino', '2222222222222', 'sauni@gmail.com', 'Administrador');
