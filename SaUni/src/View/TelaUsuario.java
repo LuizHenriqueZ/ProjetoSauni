@@ -52,34 +52,41 @@ public class TelaUsuario extends javax.swing.JFrame {
         cmbIdFuncionario = new javax.swing.JComboBox<>();
         lblIDFunc = new javax.swing.JLabel();
         btnExcluir = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
+        setResizable(false);
         getContentPane().setLayout(null);
 
+        lblUsuario.setForeground(new java.awt.Color(0, 0, 0));
         lblUsuario.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblUsuario.setText("Usuario:");
         getContentPane().add(lblUsuario);
-        lblUsuario.setBounds(430, 60, 110, 20);
+        lblUsuario.setBounds(480, 140, 110, 20);
 
         cmbSexo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Masculino", "Feminino", "Outro" }));
         getContentPane().add(cmbSexo);
-        cmbSexo.setBounds(560, 150, 140, 22);
+        cmbSexo.setBounds(610, 230, 140, 22);
         getContentPane().add(txtCpf);
-        txtCpf.setBounds(560, 120, 140, 22);
+        txtCpf.setBounds(610, 200, 140, 22);
         getContentPane().add(txtEmail);
-        txtEmail.setBounds(560, 210, 140, 22);
+        txtEmail.setBounds(610, 290, 140, 22);
 
+        lblEmail.setForeground(new java.awt.Color(0, 0, 0));
         lblEmail.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblEmail.setText("Email:");
         getContentPane().add(lblEmail);
-        lblEmail.setBounds(430, 210, 110, 20);
+        lblEmail.setBounds(480, 290, 110, 20);
         getContentPane().add(txtUsuario);
-        txtUsuario.setBounds(560, 60, 140, 22);
+        txtUsuario.setBounds(610, 140, 140, 22);
 
+        lblTelefone.setForeground(new java.awt.Color(0, 0, 0));
         lblTelefone.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblTelefone.setText("Telefone:");
         getContentPane().add(lblTelefone);
-        lblTelefone.setBounds(430, 180, 110, 20);
+        lblTelefone.setBounds(480, 260, 110, 20);
 
+        btnAdicionar.setBackground(new java.awt.Color(19, 148, 205));
+        btnAdicionar.setForeground(new java.awt.Color(0, 0, 0));
         btnAdicionar.setText("Adicionar");
         btnAdicionar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -87,76 +94,85 @@ public class TelaUsuario extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnAdicionar);
-        btnAdicionar.setBounds(600, 290, 90, 40);
+        btnAdicionar.setBounds(630, 370, 90, 40);
         getContentPane().add(txtTelefone);
-        txtTelefone.setBounds(560, 180, 140, 22);
+        txtTelefone.setBounds(610, 260, 140, 22);
 
+        lblCargo.setForeground(new java.awt.Color(0, 0, 0));
         lblCargo.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblCargo.setText("Cargo:");
         getContentPane().add(lblCargo);
-        lblCargo.setBounds(430, 240, 110, 20);
+        lblCargo.setBounds(480, 320, 110, 20);
 
+        lblCPF.setForeground(new java.awt.Color(0, 0, 0));
         lblCPF.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblCPF.setText("CPF:");
         getContentPane().add(lblCPF);
-        lblCPF.setBounds(430, 120, 110, 20);
+        lblCPF.setBounds(480, 200, 110, 20);
 
+        lblSexo.setForeground(new java.awt.Color(0, 0, 0));
         lblSexo.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblSexo.setText("Sexo:");
         getContentPane().add(lblSexo);
-        lblSexo.setBounds(430, 150, 110, 20);
+        lblSexo.setBounds(480, 230, 110, 20);
         getContentPane().add(txtSenha);
-        txtSenha.setBounds(560, 90, 140, 22);
+        txtSenha.setBounds(610, 170, 140, 22);
         getContentPane().add(txtCargo);
-        txtCargo.setBounds(560, 240, 140, 22);
+        txtCargo.setBounds(610, 320, 140, 22);
 
+        lblSenha.setForeground(new java.awt.Color(0, 0, 0));
         lblSenha.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblSenha.setText("Senha:");
         getContentPane().add(lblSenha);
-        lblSenha.setBounds(430, 90, 110, 20);
+        lblSenha.setBounds(480, 170, 110, 20);
 
+        lblNome.setForeground(new java.awt.Color(0, 0, 0));
         lblNome.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNome.setText("Nome:");
         getContentPane().add(lblNome);
-        lblNome.setBounds(430, 30, 110, 20);
+        lblNome.setBounds(480, 110, 110, 20);
         getContentPane().add(txtNome);
-        txtNome.setBounds(560, 30, 140, 22);
+        txtNome.setBounds(610, 110, 140, 22);
 
         txtCargoExcluir.setEditable(false);
         getContentPane().add(txtCargoExcluir);
-        txtCargoExcluir.setBounds(220, 200, 160, 22);
+        txtCargoExcluir.setBounds(130, 290, 160, 30);
 
+        lblCargoExcluir.setForeground(new java.awt.Color(0, 0, 0));
         lblCargoExcluir.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblCargoExcluir.setText("Cargo:");
         getContentPane().add(lblCargoExcluir);
-        lblCargoExcluir.setBounds(70, 200, 140, 20);
+        lblCargoExcluir.setBounds(-20, 290, 140, 30);
 
+        lblEmailExcluir.setForeground(new java.awt.Color(0, 0, 0));
         lblEmailExcluir.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblEmailExcluir.setText("Email:");
         getContentPane().add(lblEmailExcluir);
-        lblEmailExcluir.setBounds(70, 160, 140, 20);
+        lblEmailExcluir.setBounds(-20, 250, 140, 30);
 
         txtEmailExcluir.setEditable(false);
         getContentPane().add(txtEmailExcluir);
-        txtEmailExcluir.setBounds(220, 160, 160, 22);
+        txtEmailExcluir.setBounds(130, 250, 160, 30);
 
         txtCpfExcluir.setEditable(false);
         getContentPane().add(txtCpfExcluir);
-        txtCpfExcluir.setBounds(220, 120, 160, 22);
+        txtCpfExcluir.setBounds(130, 210, 160, 30);
 
+        lblCpfExcluir.setForeground(new java.awt.Color(0, 0, 0));
         lblCpfExcluir.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblCpfExcluir.setText("CPF:");
         getContentPane().add(lblCpfExcluir);
-        lblCpfExcluir.setBounds(70, 120, 140, 20);
+        lblCpfExcluir.setBounds(-20, 210, 140, 30);
 
+        lblNomeExcluir.setForeground(new java.awt.Color(0, 0, 0));
         lblNomeExcluir.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNomeExcluir.setText("Nome:");
         getContentPane().add(lblNomeExcluir);
-        lblNomeExcluir.setBounds(70, 80, 140, 20);
+        lblNomeExcluir.setBounds(-20, 170, 140, 30);
 
         txtNomeExcluir.setEditable(false);
         getContentPane().add(txtNomeExcluir);
-        txtNomeExcluir.setBounds(220, 80, 160, 22);
+        txtNomeExcluir.setBounds(130, 170, 160, 30);
 
         cmbIdFuncionario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -164,13 +180,16 @@ public class TelaUsuario extends javax.swing.JFrame {
             }
         });
         getContentPane().add(cmbIdFuncionario);
-        cmbIdFuncionario.setBounds(220, 40, 160, 22);
+        cmbIdFuncionario.setBounds(130, 130, 160, 30);
 
+        lblIDFunc.setForeground(new java.awt.Color(0, 0, 0));
         lblIDFunc.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        lblIDFunc.setText("Selecione o id do funcionário:");
+        lblIDFunc.setText("ID do funcionário:");
         getContentPane().add(lblIDFunc);
-        lblIDFunc.setBounds(20, 40, 190, 20);
+        lblIDFunc.setBounds(20, 130, 110, 30);
 
+        btnExcluir.setBackground(new java.awt.Color(19, 148, 205));
+        btnExcluir.setForeground(new java.awt.Color(0, 0, 0));
         btnExcluir.setText("Excluir");
         btnExcluir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -178,9 +197,13 @@ public class TelaUsuario extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnExcluir);
-        btnExcluir.setBounds(280, 280, 90, 40);
+        btnExcluir.setBounds(160, 360, 90, 40);
 
-        setSize(new java.awt.Dimension(757, 529));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/imagens/tela usuario .png"))); // NOI18N
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(0, 0, 794, 490);
+
+        setSize(new java.awt.Dimension(809, 498));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -422,6 +445,7 @@ public class TelaUsuario extends javax.swing.JFrame {
     private javax.swing.JButton btnExcluir;
     private javax.swing.JComboBox<String> cmbIdFuncionario;
     private javax.swing.JComboBox<String> cmbSexo;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel lblCPF;
     private javax.swing.JLabel lblCargo;
     private javax.swing.JLabel lblCargoExcluir;

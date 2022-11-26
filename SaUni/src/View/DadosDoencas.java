@@ -50,9 +50,13 @@ public class DadosDoencas extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         tblDoenca = new javax.swing.JTable();
         btnAtualizar = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
+        setResizable(false);
         getContentPane().setLayout(null);
 
+        btnAltSintomas.setBackground(new java.awt.Color(19, 148, 205));
+        btnAltSintomas.setForeground(new java.awt.Color(0, 0, 0));
         btnAltSintomas.setText("Adicionar/Alterar sintomas e doenças");
         btnAltSintomas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -60,7 +64,7 @@ public class DadosDoencas extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnAltSintomas);
-        btnAltSintomas.setBounds(180, 10, 240, 60);
+        btnAltSintomas.setBounds(40, 100, 240, 30);
 
         tblDoenca.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -81,8 +85,10 @@ public class DadosDoencas extends javax.swing.JFrame {
         jScrollPane1.setViewportView(tblDoenca);
 
         getContentPane().add(jScrollPane1);
-        jScrollPane1.setBounds(20, 130, 570, 350);
+        jScrollPane1.setBounds(30, 140, 570, 350);
 
+        btnAtualizar.setBackground(new java.awt.Color(19, 148, 205));
+        btnAtualizar.setForeground(new java.awt.Color(0, 0, 0));
         btnAtualizar.setText("Atualizar");
         btnAtualizar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -90,9 +96,13 @@ public class DadosDoencas extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnAtualizar);
-        btnAtualizar.setBounds(240, 80, 120, 40);
+        btnAtualizar.setBounds(440, 100, 120, 30);
 
-        setSize(new java.awt.Dimension(630, 526));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/imagens/dados doenca .png"))); // NOI18N
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(0, 0, 630, 520);
+
+        setSize(new java.awt.Dimension(641, 526));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -109,6 +119,7 @@ public class DadosDoencas extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAltSintomas;
     private javax.swing.JButton btnAtualizar;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tblDoenca;
     // End of variables declaration//GEN-END:variables

@@ -94,7 +94,9 @@ public class TesteDoenca extends javax.swing.JFrame {
         cmbDoenca = new javax.swing.JComboBox<>();
         btnDoenca = new javax.swing.JButton();
         btnSemFiltro = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
+        setResizable(false);
         getContentPane().setLayout(null);
 
         tblDoenca.setModel(new javax.swing.table.DefaultTableModel(
@@ -108,11 +110,20 @@ public class TesteDoenca extends javax.swing.JFrame {
         jScrollPane1.setViewportView(tblDoenca);
 
         getContentPane().add(jScrollPane1);
-        jScrollPane1.setBounds(20, 130, 560, 275);
+        jScrollPane1.setBounds(30, 170, 560, 275);
 
+        cmbSintoma.setEditable(true);
+        cmbSintoma.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Sintoma", " " }));
+        cmbSintoma.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmbSintomaActionPerformed(evt);
+            }
+        });
         getContentPane().add(cmbSintoma);
-        cmbSintoma.setBounds(50, 40, 110, 30);
+        cmbSintoma.setBounds(420, 80, 110, 30);
 
+        btnSintoma.setBackground(new java.awt.Color(19, 148, 205));
+        btnSintoma.setForeground(new java.awt.Color(0, 0, 0));
         btnSintoma.setText("Filtrar por sintoma");
         btnSintoma.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -120,11 +131,19 @@ public class TesteDoenca extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnSintoma);
-        btnSintoma.setBounds(40, 90, 140, 22);
+        btnSintoma.setBounds(400, 130, 140, 22);
 
+        cmbDoenca.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Doença", " " }));
+        cmbDoenca.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmbDoencaActionPerformed(evt);
+            }
+        });
         getContentPane().add(cmbDoenca);
-        cmbDoenca.setBounds(440, 40, 110, 30);
+        cmbDoenca.setBounds(70, 80, 110, 30);
 
+        btnDoenca.setBackground(new java.awt.Color(19, 148, 205));
+        btnDoenca.setForeground(new java.awt.Color(0, 0, 0));
         btnDoenca.setText("Filtrar por doença");
         btnDoenca.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -132,8 +151,10 @@ public class TesteDoenca extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnDoenca);
-        btnDoenca.setBounds(430, 90, 140, 22);
+        btnDoenca.setBounds(50, 130, 140, 22);
 
+        btnSemFiltro.setBackground(new java.awt.Color(19, 148, 205));
+        btnSemFiltro.setForeground(new java.awt.Color(0, 0, 0));
         btnSemFiltro.setText("Sem filtro");
         btnSemFiltro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -141,9 +162,13 @@ public class TesteDoenca extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnSemFiltro);
-        btnSemFiltro.setBounds(230, 90, 140, 22);
+        btnSemFiltro.setBounds(220, 130, 140, 22);
 
-        setSize(new java.awt.Dimension(631, 465));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/imagens/teste doenca.png"))); // NOI18N
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(0, -30, 620, 530);
+
+        setSize(new java.awt.Dimension(633, 480));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -275,12 +300,21 @@ public class TesteDoenca extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnSemFiltroActionPerformed
 
+    private void cmbDoencaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbDoencaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cmbDoencaActionPerformed
+
+    private void cmbSintomaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbSintomaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cmbSintomaActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnDoenca;
     private javax.swing.JButton btnSemFiltro;
     private javax.swing.JButton btnSintoma;
     private javax.swing.JComboBox<String> cmbDoenca;
     private javax.swing.JComboBox<String> cmbSintoma;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tblDoenca;
     // End of variables declaration//GEN-END:variables

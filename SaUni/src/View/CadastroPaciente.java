@@ -30,67 +30,79 @@ public class CadastroPaciente extends javax.swing.JFrame {
         txtTelefone = new javax.swing.JTextField();
         cmbSexo = new javax.swing.JComboBox<>();
         btnConcluir = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
+        setResizable(false);
         getContentPane().setLayout(null);
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel2.setText("Usuario:");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(50, 20, 70, 20);
+        jLabel2.setBounds(30, 60, 70, 20);
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel3.setText("Email:");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(50, 260, 70, 20);
+        jLabel3.setBounds(30, 300, 70, 20);
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel4.setText("Senha:");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(50, 60, 70, 20);
+        jLabel4.setBounds(30, 100, 70, 20);
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel5.setText("Nome:");
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(50, 100, 70, 20);
+        jLabel5.setBounds(30, 140, 70, 20);
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel6.setText("CPF:");
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(50, 140, 70, 20);
+        jLabel6.setBounds(30, 180, 70, 20);
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(0, 0, 0));
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel7.setText("Sexo:");
         getContentPane().add(jLabel7);
-        jLabel7.setBounds(50, 180, 70, 20);
+        jLabel7.setBounds(30, 220, 70, 20);
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(0, 0, 0));
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel8.setText("Telefone:");
         getContentPane().add(jLabel8);
-        jLabel8.setBounds(50, 220, 70, 20);
+        jLabel8.setBounds(30, 260, 70, 20);
         getContentPane().add(txtEmail);
-        txtEmail.setBounds(130, 260, 160, 22);
+        txtEmail.setBounds(110, 300, 160, 22);
         getContentPane().add(txtUsuario);
-        txtUsuario.setBounds(130, 20, 160, 22);
+        txtUsuario.setBounds(110, 60, 160, 22);
         getContentPane().add(txtSenha);
-        txtSenha.setBounds(130, 60, 160, 22);
+        txtSenha.setBounds(110, 100, 160, 22);
         getContentPane().add(txtNome);
-        txtNome.setBounds(130, 100, 160, 22);
+        txtNome.setBounds(110, 140, 160, 22);
         getContentPane().add(txtCPF);
-        txtCPF.setBounds(130, 140, 160, 22);
+        txtCPF.setBounds(110, 180, 160, 22);
         getContentPane().add(txtTelefone);
-        txtTelefone.setBounds(130, 220, 160, 20);
+        txtTelefone.setBounds(110, 260, 160, 20);
 
+        cmbSexo.setForeground(new java.awt.Color(0, 0, 0));
         cmbSexo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecione uma opção", "Masculino", "Feminino", "Outro" }));
         getContentPane().add(cmbSexo);
-        cmbSexo.setBounds(130, 180, 160, 22);
+        cmbSexo.setBounds(110, 220, 160, 22);
 
+        btnConcluir.setBackground(new java.awt.Color(19, 148, 205));
+        btnConcluir.setForeground(new java.awt.Color(0, 0, 0));
         btnConcluir.setText("Concluir");
         btnConcluir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -98,9 +110,13 @@ public class CadastroPaciente extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnConcluir);
-        btnConcluir.setBounds(150, 310, 110, 40);
+        btnConcluir.setBounds(130, 340, 110, 40);
 
-        setSize(new java.awt.Dimension(416, 397));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/imagens/cadastro paciente.png"))); // NOI18N
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(0, 0, 577, 420);
+
+        setSize(new java.awt.Dimension(593, 426));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -191,6 +207,7 @@ public class CadastroPaciente extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnConcluir;
     private javax.swing.JComboBox<String> cmbSexo;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

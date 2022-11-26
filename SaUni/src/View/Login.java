@@ -26,15 +26,19 @@ public class Login extends javax.swing.JFrame {
         txtSenha = new javax.swing.JPasswordField();
         btnCadastrar = new javax.swing.JButton();
         btnRecSenha = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Senha:");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(60, 100, 100, 30);
+        jLabel1.setBounds(500, 160, 100, 30);
 
+        btnLoginFunc.setBackground(new java.awt.Color(19, 148, 205));
+        btnLoginFunc.setForeground(new java.awt.Color(0, 0, 0));
         btnLoginFunc.setText("Login funcionario");
         btnLoginFunc.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -42,15 +46,24 @@ public class Login extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnLoginFunc);
-        btnLoginFunc.setBounds(200, 160, 130, 50);
+        btnLoginFunc.setBounds(680, 220, 130, 50);
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Usuario:");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(50, 60, 100, 30);
-        getContentPane().add(txtUsuario);
-        txtUsuario.setBounds(140, 60, 190, 30);
+        jLabel2.setBounds(490, 120, 100, 30);
 
+        txtUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtUsuarioActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtUsuario);
+        txtUsuario.setBounds(570, 120, 190, 30);
+
+        btnLoginPac.setBackground(new java.awt.Color(19, 148, 205));
+        btnLoginPac.setForeground(new java.awt.Color(0, 0, 0));
         btnLoginPac.setText(" Login paciente");
         btnLoginPac.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -58,10 +71,18 @@ public class Login extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnLoginPac);
-        btnLoginPac.setBounds(40, 160, 140, 50);
-        getContentPane().add(txtSenha);
-        txtSenha.setBounds(140, 100, 190, 30);
+        btnLoginPac.setBounds(510, 220, 140, 50);
 
+        txtSenha.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtSenhaActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtSenha);
+        txtSenha.setBounds(570, 160, 190, 30);
+
+        btnCadastrar.setBackground(new java.awt.Color(19, 148, 205));
+        btnCadastrar.setForeground(new java.awt.Color(0, 0, 0));
         btnCadastrar.setText("Fazer cadastro");
         btnCadastrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -69,7 +90,7 @@ public class Login extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnCadastrar);
-        btnCadastrar.setBounds(130, 220, 120, 30);
+        btnCadastrar.setBounds(610, 290, 120, 40);
 
         btnRecSenha.setBackground(new java.awt.Color(242, 242, 242));
         btnRecSenha.setForeground(new java.awt.Color(255, 0, 0));
@@ -84,9 +105,14 @@ public class Login extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnRecSenha);
-        btnRecSenha.setBounds(80, 20, 230, 20);
+        btnRecSenha.setBounds(570, 340, 190, 30);
 
-        setSize(new java.awt.Dimension(416, 308));
+        jLabel3.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/imagens/login.png"))); // NOI18N
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(0, 0, 830, 420);
+
+        setSize(new java.awt.Dimension(844, 421));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -184,6 +210,14 @@ public class Login extends javax.swing.JFrame {
         rs.setVisible(true);
     }//GEN-LAST:event_btnRecSenhaActionPerformed
 
+    private void txtSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSenhaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtSenhaActionPerformed
+
+    private void txtUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUsuarioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtUsuarioActionPerformed
+
     public static void main(String args[]) {
 
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -222,6 +256,7 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JButton btnRecSenha;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPasswordField txtSenha;
     private javax.swing.JTextField txtUsuario;
     // End of variables declaration//GEN-END:variables

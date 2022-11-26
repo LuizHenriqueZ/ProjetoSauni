@@ -124,6 +124,7 @@ public class Agenda extends javax.swing.JFrame {
         cmbMedico = new javax.swing.JComboBox<>();
         btnFuncionario = new javax.swing.JButton();
         btnPaciente = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -138,6 +139,7 @@ public class Agenda extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(jTable1);
 
+        setResizable(false);
         getContentPane().setLayout(null);
 
         tblAgenda.setModel(new javax.swing.table.DefaultTableModel(
@@ -151,8 +153,10 @@ public class Agenda extends javax.swing.JFrame {
         jScrollPane3.setViewportView(tblAgenda);
 
         getContentPane().add(jScrollPane3);
-        jScrollPane3.setBounds(90, 180, 640, 402);
+        jScrollPane3.setBounds(20, 200, 710, 330);
 
+        btnAlterarAgenda.setBackground(new java.awt.Color(19, 148, 205));
+        btnAlterarAgenda.setForeground(new java.awt.Color(0, 0, 0));
         btnAlterarAgenda.setText("Alterar data agendamento");
         btnAlterarAgenda.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -160,8 +164,10 @@ public class Agenda extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnAlterarAgenda);
-        btnAlterarAgenda.setBounds(20, 20, 170, 30);
+        btnAlterarAgenda.setBounds(20, 80, 170, 30);
 
+        btnAgendar.setBackground(new java.awt.Color(19, 148, 205));
+        btnAgendar.setForeground(new java.awt.Color(0, 0, 0));
         btnAgendar.setText("Agendar consulta");
         btnAgendar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -169,8 +175,10 @@ public class Agenda extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnAgendar);
-        btnAgendar.setBounds(570, 70, 220, 30);
+        btnAgendar.setBounds(520, 120, 220, 30);
 
+        btnDeletarAgenda.setBackground(new java.awt.Color(19, 148, 205));
+        btnDeletarAgenda.setForeground(new java.awt.Color(0, 0, 0));
         btnDeletarAgenda.setText("Cancelar/deletar agendamento");
         btnDeletarAgenda.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -178,8 +186,10 @@ public class Agenda extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnDeletarAgenda);
-        btnDeletarAgenda.setBounds(570, 20, 220, 30);
+        btnDeletarAgenda.setBounds(520, 80, 220, 30);
 
+        btnAtualizar.setBackground(new java.awt.Color(19, 148, 205));
+        btnAtualizar.setForeground(new java.awt.Color(0, 0, 0));
         btnAtualizar.setText("Atualizar agenda");
         btnAtualizar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -187,16 +197,19 @@ public class Agenda extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnAtualizar);
-        btnAtualizar.setBounds(20, 70, 170, 30);
+        btnAtualizar.setBounds(20, 120, 170, 30);
 
+        lblFiltrar.setForeground(new java.awt.Color(0, 0, 0));
         lblFiltrar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblFiltrar.setText("Filtrar por");
         getContentPane().add(lblFiltrar);
-        lblFiltrar.setBounds(340, 10, 70, 16);
+        lblFiltrar.setBounds(310, 70, 70, 16);
 
         getContentPane().add(cmbPaciente);
-        cmbPaciente.setBounds(220, 110, 120, 20);
+        cmbPaciente.setBounds(200, 130, 120, 20);
 
+        btnSemFiltro.setBackground(new java.awt.Color(19, 148, 205));
+        btnSemFiltro.setForeground(new java.awt.Color(0, 0, 0));
         btnSemFiltro.setText("Sem filtro");
         btnSemFiltro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -204,11 +217,13 @@ public class Agenda extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnSemFiltro);
-        btnSemFiltro.setBounds(310, 40, 140, 22);
+        btnSemFiltro.setBounds(280, 100, 140, 22);
 
         getContentPane().add(cmbMedico);
-        cmbMedico.setBounds(440, 110, 120, 20);
+        cmbMedico.setBounds(380, 130, 120, 20);
 
+        btnFuncionario.setBackground(new java.awt.Color(19, 148, 205));
+        btnFuncionario.setForeground(new java.awt.Color(0, 0, 0));
         btnFuncionario.setText("Filtrar por funcionario");
         btnFuncionario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -216,8 +231,10 @@ public class Agenda extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnFuncionario);
-        btnFuncionario.setBounds(420, 140, 160, 22);
+        btnFuncionario.setBounds(360, 160, 160, 22);
 
+        btnPaciente.setBackground(new java.awt.Color(19, 148, 205));
+        btnPaciente.setForeground(new java.awt.Color(0, 0, 0));
         btnPaciente.setText("Filtrar por paciente");
         btnPaciente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -225,9 +242,13 @@ public class Agenda extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnPaciente);
-        btnPaciente.setBounds(200, 140, 160, 22);
+        btnPaciente.setBounds(180, 160, 160, 22);
 
-        setSize(new java.awt.Dimension(857, 636));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/imagens/lista usuario.png"))); // NOI18N
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(0, 0, 750, 540);
+
+        setSize(new java.awt.Dimension(767, 547));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -458,6 +479,7 @@ public class Agenda extends javax.swing.JFrame {
     private javax.swing.JButton btnSemFiltro;
     private javax.swing.JComboBox<String> cmbMedico;
     private javax.swing.JComboBox<String> cmbPaciente;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTable jTable1;

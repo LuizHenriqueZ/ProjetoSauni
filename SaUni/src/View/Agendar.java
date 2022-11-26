@@ -33,47 +33,57 @@ public class Agendar extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         txtCPF = new javax.swing.JTextField();
+        jLabel9 = new javax.swing.JLabel();
 
+        setResizable(false);
         getContentPane().setLayout(null);
 
+        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Para qual data você quer agendar ?");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(90, 130, 190, 16);
+        jLabel2.setBounds(100, 210, 190, 16);
         getContentPane().add(txtAno);
-        txtAno.setBounds(230, 180, 50, 22);
+        txtAno.setBounds(240, 260, 50, 22);
         getContentPane().add(txtDia);
-        txtDia.setBounds(90, 180, 40, 22);
+        txtDia.setBounds(100, 260, 40, 22);
         getContentPane().add(txtMes);
-        txtMes.setBounds(160, 180, 40, 22);
+        txtMes.setBounds(170, 260, 40, 22);
 
+        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("aaaa");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(230, 160, 50, 16);
+        jLabel3.setBounds(240, 240, 50, 16);
 
+        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("dd");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(90, 160, 40, 16);
+        jLabel4.setBounds(100, 240, 40, 16);
 
+        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("mm");
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(160, 160, 37, 16);
+        jLabel5.setBounds(170, 240, 37, 16);
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("/");
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(190, 170, 50, 40);
+        jLabel6.setBounds(200, 250, 50, 40);
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(0, 0, 0));
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel7.setText("/");
         getContentPane().add(jLabel7);
-        jLabel7.setBounds(120, 170, 50, 40);
+        jLabel7.setBounds(130, 250, 50, 40);
 
+        btnConcluir.setBackground(new java.awt.Color(19, 148, 205));
+        btnConcluir.setForeground(new java.awt.Color(0, 0, 0));
         btnConcluir.setText("Concluido");
         btnConcluir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -81,24 +91,30 @@ public class Agendar extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnConcluir);
-        btnConcluir.setBounds(255, 230, 90, 40);
+        btnConcluir.setBounds(260, 310, 90, 40);
 
         getContentPane().add(cmbMedicos);
-        cmbMedicos.setBounds(200, 80, 110, 22);
+        cmbMedicos.setBounds(220, 160, 110, 22);
 
+        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel1.setText("Selecione um médico:");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(50, 80, 140, 20);
+        jLabel1.setBounds(60, 160, 140, 20);
 
+        jLabel8.setForeground(new java.awt.Color(0, 0, 0));
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel8.setText("Digite seu CPF:");
         getContentPane().add(jLabel8);
-        jLabel8.setBounds(60, 40, 130, 16);
+        jLabel8.setBounds(70, 120, 130, 16);
         getContentPane().add(txtCPF);
-        txtCPF.setBounds(200, 40, 110, 22);
+        txtCPF.setBounds(220, 120, 110, 22);
 
-        setSize(new java.awt.Dimension(416, 318));
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/imagens/agenda.png"))); // NOI18N
+        getContentPane().add(jLabel9);
+        jLabel9.setBounds(0, 0, 570, 424);
+
+        setSize(new java.awt.Dimension(584, 433));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -230,6 +246,7 @@ public class Agendar extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JTextField txtAno;
     private javax.swing.JTextField txtCPF;
     private javax.swing.JTextField txtDia;

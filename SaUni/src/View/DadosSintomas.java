@@ -37,9 +37,13 @@ public class DadosSintomas extends javax.swing.JFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         tblSintoma = new javax.swing.JTable();
         txtTabela = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
+        setResizable(false);
         getContentPane().setLayout(null);
 
+        btnAtualizar.setBackground(new java.awt.Color(19, 148, 205));
+        btnAtualizar.setForeground(new java.awt.Color(0, 0, 0));
         btnAtualizar.setText("Atualizar");
         btnAtualizar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -47,8 +51,10 @@ public class DadosSintomas extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnAtualizar);
-        btnAtualizar.setBounds(40, 470, 90, 22);
+        btnAtualizar.setBounds(90, 400, 90, 22);
 
+        btnAddSintoma.setBackground(new java.awt.Color(19, 148, 205));
+        btnAddSintoma.setForeground(new java.awt.Color(0, 0, 0));
         btnAddSintoma.setText("Adicionar sintoma");
         btnAddSintoma.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -56,8 +62,10 @@ public class DadosSintomas extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnAddSintoma);
-        btnAddSintoma.setBounds(70, 20, 140, 22);
+        btnAddSintoma.setBounds(130, 110, 140, 22);
 
+        btnDelSintoma.setBackground(new java.awt.Color(19, 148, 205));
+        btnDelSintoma.setForeground(new java.awt.Color(0, 0, 0));
         btnDelSintoma.setText("Deletar sintoma");
         btnDelSintoma.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -65,8 +73,10 @@ public class DadosSintomas extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnDelSintoma);
-        btnDelSintoma.setBounds(70, 50, 140, 22);
+        btnDelSintoma.setBounds(130, 150, 140, 22);
 
+        btnDelSintomaDoenca.setBackground(new java.awt.Color(19, 148, 205));
+        btnDelSintomaDoenca.setForeground(new java.awt.Color(0, 0, 0));
         btnDelSintomaDoenca.setText("Remover sintoma de uma doença");
         btnDelSintomaDoenca.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -74,8 +84,10 @@ public class DadosSintomas extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnDelSintomaDoenca);
-        btnDelSintomaDoenca.setBounds(30, 120, 230, 22);
+        btnDelSintomaDoenca.setBounds(90, 300, 230, 22);
 
+        btnAddSintomaDoenca.setBackground(new java.awt.Color(19, 148, 205));
+        btnAddSintomaDoenca.setForeground(new java.awt.Color(0, 0, 0));
         btnAddSintomaDoenca.setText("Adicionar sintoma a uma doença");
         btnAddSintomaDoenca.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -83,8 +95,10 @@ public class DadosSintomas extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnAddSintomaDoenca);
-        btnAddSintomaDoenca.setBounds(30, 90, 230, 22);
+        btnAddSintomaDoenca.setBounds(90, 350, 230, 22);
 
+        btnListaDoenca.setBackground(new java.awt.Color(19, 148, 205));
+        btnListaDoenca.setForeground(new java.awt.Color(0, 0, 0));
         btnListaDoenca.setText("Lista doenças");
         btnListaDoenca.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -92,8 +106,10 @@ public class DadosSintomas extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnListaDoenca);
-        btnListaDoenca.setBounds(160, 470, 130, 22);
+        btnListaDoenca.setBounds(200, 400, 130, 22);
 
+        btnListaSintoma.setBackground(new java.awt.Color(19, 148, 205));
+        btnListaSintoma.setForeground(new java.awt.Color(0, 0, 0));
         btnListaSintoma.setText("Lista sintomas");
         btnListaSintoma.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -101,25 +117,29 @@ public class DadosSintomas extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnListaSintoma);
-        btnListaSintoma.setBounds(160, 470, 130, 22);
+        btnListaSintoma.setBounds(130, 440, 130, 22);
 
-        btnExcluirDoenca.setText("Excluir Doença da lista");
+        btnExcluirDoenca.setBackground(new java.awt.Color(19, 148, 205));
+        btnExcluirDoenca.setForeground(new java.awt.Color(0, 0, 0));
+        btnExcluirDoenca.setText("Excluir Doença");
         btnExcluirDoenca.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnExcluirDoencaActionPerformed(evt);
             }
         });
         getContentPane().add(btnExcluirDoenca);
-        btnExcluirDoenca.setBounds(50, 210, 170, 22);
+        btnExcluirDoenca.setBounds(130, 250, 140, 22);
 
-        btnAdicionarDoenca.setText("Adicionar Doença a lista");
+        btnAdicionarDoenca.setBackground(new java.awt.Color(19, 148, 205));
+        btnAdicionarDoenca.setForeground(new java.awt.Color(0, 0, 0));
+        btnAdicionarDoenca.setText("Adicionar Doença");
         btnAdicionarDoenca.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAdicionarDoencaActionPerformed(evt);
             }
         });
         getContentPane().add(btnAdicionarDoenca);
-        btnAdicionarDoenca.setBounds(50, 170, 170, 22);
+        btnAdicionarDoenca.setBounds(130, 200, 140, 22);
 
         tblSintoma.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -140,13 +160,17 @@ public class DadosSintomas extends javax.swing.JFrame {
         jScrollPane2.setViewportView(tblSintoma);
 
         getContentPane().add(jScrollPane2);
-        jScrollPane2.setBounds(360, 30, 290, 470);
+        jScrollPane2.setBounds(360, 40, 300, 470);
 
         txtTabela.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         getContentPane().add(txtTabela);
         txtTabela.setBounds(367, 10, 280, 20);
 
-        setSize(new java.awt.Dimension(783, 560));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/imagens/dados sintomas.png"))); // NOI18N
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(0, 0, 680, 540);
+
+        setSize(new java.awt.Dimension(693, 548));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -525,6 +549,7 @@ public class DadosSintomas extends javax.swing.JFrame {
     private javax.swing.JButton btnExcluirDoenca;
     private javax.swing.JButton btnListaDoenca;
     private javax.swing.JButton btnListaSintoma;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable tblSintoma;
     private javax.swing.JLabel txtTabela;

@@ -55,13 +55,17 @@ public class Menu extends javax.swing.JFrame {
         btnAlterarDadosC = new javax.swing.JButton();
         btnListaDoencas = new javax.swing.JButton();
         btnAgenda = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         mnuAdmin = new javax.swing.JMenu();
         itmAddFuncionario = new javax.swing.JMenuItem();
         itmDelFuncionario = new javax.swing.JMenuItem();
 
+        setResizable(false);
         getContentPane().setLayout(null);
 
+        btnTeste.setBackground(new java.awt.Color(0, 102, 255));
+        btnTeste.setForeground(new java.awt.Color(0, 0, 0));
         btnTeste.setText("Fazer teste");
         btnTeste.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -69,8 +73,10 @@ public class Menu extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnTeste);
-        btnTeste.setBounds(40, 40, 120, 40);
+        btnTeste.setBounds(180, 120, 160, 40);
 
+        btnAlterarDadosC.setBackground(new java.awt.Color(0, 102, 255));
+        btnAlterarDadosC.setForeground(new java.awt.Color(0, 0, 0));
         btnAlterarDadosC.setText("Alterar dados cadastrais");
         btnAlterarDadosC.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -78,8 +84,10 @@ public class Menu extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnAlterarDadosC);
-        btnAlterarDadosC.setBounds(40, 200, 180, 60);
+        btnAlterarDadosC.setBounds(180, 220, 160, 40);
 
+        btnListaDoencas.setBackground(new java.awt.Color(0, 102, 255));
+        btnListaDoencas.setForeground(new java.awt.Color(0, 0, 0));
         btnListaDoencas.setText("Lista de doenças");
         btnListaDoencas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -87,8 +95,10 @@ public class Menu extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnListaDoencas);
-        btnListaDoencas.setBounds(40, 140, 150, 40);
+        btnListaDoencas.setBounds(180, 270, 160, 40);
 
+        btnAgenda.setBackground(new java.awt.Color(0, 102, 255));
+        btnAgenda.setForeground(new java.awt.Color(0, 0, 0));
         btnAgenda.setText("Agenda");
         btnAgenda.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -96,7 +106,11 @@ public class Menu extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnAgenda);
-        btnAgenda.setBounds(40, 90, 120, 40);
+        btnAgenda.setBounds(180, 170, 160, 40);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/imagens/menu.png"))); // NOI18N
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(0, 0, 548, 400);
 
         mnuAdmin.setText("Admin");
 
@@ -120,7 +134,7 @@ public class Menu extends javax.swing.JFrame {
 
         setJMenuBar(jMenuBar1);
 
-        setSize(new java.awt.Dimension(416, 361));
+        setSize(new java.awt.Dimension(563, 407));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -167,6 +181,7 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JButton btnTeste;
     private javax.swing.JMenuItem itmAddFuncionario;
     private javax.swing.JMenuItem itmDelFuncionario;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenu mnuAdmin;
     // End of variables declaration//GEN-END:variables

@@ -26,16 +26,21 @@ public class RecuperarSenha extends javax.swing.JFrame {
         txtCpf = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         cmbConta = new javax.swing.JComboBox<>();
+        jLabel5 = new javax.swing.JLabel();
 
+        setResizable(false);
         getContentPane().setLayout(null);
 
+        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel1.setText("Digite sua nova senha:");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(10, 160, 140, 20);
+        jLabel1.setBounds(150, 290, 140, 30);
         getContentPane().add(txtNovaSenha);
-        txtNovaSenha.setBounds(160, 160, 140, 22);
+        txtNovaSenha.setBounds(300, 290, 140, 30);
 
+        btnConfirmar.setBackground(new java.awt.Color(19, 148, 205));
+        btnConfirmar.setForeground(new java.awt.Color(0, 0, 0));
         btnConfirmar.setText("Confirmar");
         btnConfirmar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -43,32 +48,39 @@ public class RecuperarSenha extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnConfirmar);
-        btnConfirmar.setBounds(140, 210, 90, 22);
+        btnConfirmar.setBounds(240, 340, 130, 30);
 
+        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel2.setText("Digite seu usuario:");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(40, 40, 110, 20);
+        jLabel2.setBounds(180, 170, 110, 30);
 
+        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel3.setText("Digite seu CPF:");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(40, 80, 110, 20);
+        jLabel3.setBounds(180, 210, 110, 30);
         getContentPane().add(txtUsuario);
-        txtUsuario.setBounds(160, 40, 140, 22);
+        txtUsuario.setBounds(300, 170, 140, 30);
         getContentPane().add(txtCpf);
-        txtCpf.setBounds(160, 80, 140, 22);
+        txtCpf.setBounds(300, 210, 140, 30);
 
+        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel4.setText("Tipo de conta:");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(40, 120, 110, 20);
+        jLabel4.setBounds(180, 250, 110, 30);
 
         cmbConta.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Paciente", "Funcionario" }));
         getContentPane().add(cmbConta);
-        cmbConta.setBounds(160, 120, 140, 22);
+        cmbConta.setBounds(300, 250, 140, 30);
 
-        setSize(new java.awt.Dimension(416, 308));
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/imagens/esqueci a senha.png"))); // NOI18N
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(0, 0, 606, 450);
+
+        setSize(new java.awt.Dimension(621, 456));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -178,6 +190,7 @@ public class RecuperarSenha extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JTextField txtCpf;
     private javax.swing.JTextField txtNovaSenha;
     private javax.swing.JTextField txtUsuario;
